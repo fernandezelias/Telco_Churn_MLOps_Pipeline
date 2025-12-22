@@ -2,4 +2,5 @@
     remote = dagshub
 ['remote "dagshub"']
     url = https://fernandezelias@dagshub.com/fernandezelias/Telco_Churn_MLOps_Pipeline.dvc
-    password = d36867abc5cc419ff7a49e34b1498eaa047de52f
+    password = 48f367fedc1c9958511f1911ccd47bfa2f8777a8
+    user = fernandezelias
