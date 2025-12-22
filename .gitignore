@@ -1,0 +1,40 @@
+# ==========================================================
+# Telco Churn ML Pipeline - .gitignore
+# ==========================================================
+
+# --- Environment and credentials ---
+.env/                  
+.venv/                 
+venv/                  
+ENV/                   
+
+# --- Python cache ---
+__pycache__/           
+*.py[cod]              
+
+# --- Jupyter notebooks ---
+.ipynb_checkpoints/     
+
+# --- DVC & MLflow ---
+.dvc/tmp/               # Temporary DVC files
+.mlflow/                # Local MLflow runs (not needed in repo)
+.dvc/cache/             # Prevent accidental commit if misconfigured
+
+# Métricas generadas automáticamente (no versionar con Git)
+metrics.json
+metrics_tree.json
+metrics_test.json
+metrics_*.json
+
+# --- Logs & temp ---
+logs/
+*.log
+
+# --- Reports (artefactos generados) ---
+reports/*
+!reports/.gitignore     # Permitir solo el archivo de control
+
+# --- System & IDE files ---
+.DS_Store               
+.idea/                  
+.vscode/
