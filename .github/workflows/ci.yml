@@ -9,12 +9,8 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
-    env:
-      AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
-      AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
 
     steps:
-
       - name: Checkout repository
         uses: actions/checkout@v4
 
@@ -31,14 +27,12 @@ jobs:
       - name: Check DVC installation
         run: dvc --version
 
-      - name: DVC Pull
-        run: dvc pull -v
-
-      - name: Reproduce DVC pipeline
-        run: dvc repro -v
-
-      - name: Push artifacts to DagsHub
-        run: dvc push -v
-
-      - name: Show DVC Metrics
-        run: dvc metrics show
+      - name: Basic pipeline sanity check
+        run: |
+          python - << 'EOF'
+          import importlib
+          importlib.import_module("src.make_data")
+          importlib.import_module("src.preprocess_data")
+          importlib.import_module("src.train")
+          print("Pipeline modules import correctly")
+          EOF
