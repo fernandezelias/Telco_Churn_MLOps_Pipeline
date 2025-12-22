@@ -1,0 +1,4 @@
+[core]
+    remote = dagshub
+['remote "dagshub"']
+    url = https://dagshub.com/fernandezelias/Telco_Churn_MLOps_Pipeline.dvc
