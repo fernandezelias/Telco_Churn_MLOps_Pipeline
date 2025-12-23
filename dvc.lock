@@ -48,8 +48,8 @@ stages:
       size: 1327
     - path: src/train.py
       hash: md5
-      md5: 61191b5c113da3703accad6dc79aed43
-      size: 5666
+      md5: e4db1d9903c6fa45639cacced06ce774
+      size: 5442
     params:
       params/logreg.yaml:
         model.C: 10.0
@@ -83,8 +83,8 @@ stages:
       size: 1205
     - path: src/train.py
       hash: md5
-      md5: 61191b5c113da3703accad6dc79aed43
-      size: 5666
+      md5: e4db1d9903c6fa45639cacced06ce774
+      size: 5442
     params:
       params/decision_tree.yaml:
         model.criterion: gini
