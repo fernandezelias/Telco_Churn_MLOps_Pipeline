@@ -44,15 +44,15 @@ stages:
       size: 1022255
     - path: params/logreg.yaml
       hash: md5
-      md5: a2f029293b6948a44cf6af2c81507621
-      size: 1327
+      md5: 43516c06849bdad463b2f0c442fcd7b0
+      size: 1328
     - path: src/train.py
       hash: md5
       md5: e4db1d9903c6fa45639cacced06ce774
       size: 5442
     params:
       params/logreg.yaml:
-        model.C: 10.0
+        model.C: 100.0
         model.fit_intercept: true
         model.max_iter: 100
         model.penalty: l2
@@ -62,11 +62,11 @@ stages:
     outs:
     - path: metrics/logreg_metrics.json
       hash: md5
-      md5: 2e103c5c3f904a5fd7b8ca68e45c6ce1
-      size: 157
+      md5: 007c7a6f4e0acb8455b1a35f5253aa09
+      size: 159
     - path: models/telco_logreg.pkl
       hash: md5
-      md5: 742be0daa22dc57e25d7bc7a5db4d267
+      md5: f13ac3d6d411af1806b512a1ac26d00f
       size: 1759
   train_tree:
     cmd: python src/train.py --data data/prepared/telco_churn_prepared.csv 
@@ -113,7 +113,7 @@ stages:
       size: 1022255
     - path: models/telco_logreg.pkl
       hash: md5
-      md5: 742be0daa22dc57e25d7bc7a5db4d267
+      md5: f13ac3d6d411af1806b512a1ac26d00f
       size: 1759
     - path: src/evaluate.py
       hash: md5
@@ -122,12 +122,12 @@ stages:
     outs:
     - path: reports/logreg_eval.json
       hash: md5
-      md5: bbc783d394f80671d2c975c56cd32b3f
+      md5: 773bba50cdee4d56becd02d76b1cc5f7
       size: 158
     - path: reports/roc_logreg.png
       hash: md5
-      md5: 4351d831f7ff5b3ab37282d4f60cba5a
-      size: 26104
+      md5: 9b53b698b387bdeea5f2a5742537cec1
+      size: 26063
   evaluate_tree:
     cmd: python src/evaluate.py --model models/telco_tree.pkl --data 
       data/prepared/telco_churn_prepared.csv --metrics reports/tree_eval.json 
