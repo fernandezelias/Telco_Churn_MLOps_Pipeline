@@ -1,4 +1,4 @@
-# 🔁 Telco_Churn_MLOps_Pipeline
+# 🔁 Telco Churn MLOps Pipeline  
 
 🌐 Available in [English](README_EN.md)
 
@@ -9,17 +9,17 @@
 ![Status](https://img.shields.io/badge/Status-Portfolio-success.svg)
 ![License](https://img.shields.io/badge/License-MIT-green.svg)
 
-Este proyecto implementa un **pipeline completo y reproducible de Machine Learning** para la **predicción de churn en una empresa de telecomunicaciones**, aplicando prácticas modernas de **MLOps** mediante **DVC**, **MLflow**, **GitHub Actions** y **DagsHub**.
+Este proyecto implementa un **pipeline completo y reproducible de Machine Learning** para la **predicción de churn en una empresa de telecomunicaciones**, aplicando prácticas modernas de **MLOps**.
 
-El foco está puesto en la **reproducibilidad, trazabilidad y automatización** del flujo de trabajo, desde la preparación de los datos hasta la evaluación del modelo.
+El foco está puesto en la **reproducibilidad, trazabilidad y automatización** del flujo de trabajo, desde la preparación de los datos hasta la evaluación del modelo, integrando **DVC**, **MLflow**, **GitHub Actions** y **DagsHub**.
 
 ---
 
 ## 🧰 Stack Tecnológico
 
-- **Python (scikit-learn)** → entrenamiento y evaluación de modelos  
+- **Python / scikit-learn** → entrenamiento y evaluación de modelos  
 - **DVC** → versionado de datos, modelos y artefactos  
-- **MLflow** → tracking de métricas y experimentos  
+- **MLflow** → tracking de métricas, parámetros y experimentos  
 - **GitHub Actions** → validación automática del pipeline (CI)  
 - **DagsHub** → almacenamiento remoto y servidor de MLflow  
 
@@ -27,24 +27,17 @@ El foco está puesto en la **reproducibilidad, trazabilidad y automatización** 
 
 ## 🧭 Arquitectura del pipeline
 
-```
-Raw data
-   │
-   ▼
-Preprocessing
-   │
-   ▼
-Feature Engineering
-   │
-   ▼
-Model Training  ──► MLflow (params + metrics)
-   │
-   ▼
-Evaluation
-   │
-   ▼
-Artefactos (modelos, métricas, gráficos)
-```
+Raw data  
+↓  
+Preprocessing  
+↓  
+Feature Engineering  
+↓  
+Model Training → MLflow (params + metrics)  
+↓  
+Evaluation  
+↓  
+Artefactos (modelos, métricas)
 
 El pipeline completo se ejecuta de forma reproducible mediante:
 
@@ -54,75 +47,68 @@ dvc repro
 
 ---
 
+📊 Modelos y Experimentos
+
+Se entrenaron y compararon dos modelos supervisados:
+- Logistic Regression
+- Decision Tree
+
+Para el modelo Logistic Regression se evaluaron los siguientes valores del hiperparámetro C:
+- C = 1
+- C = 10
+- C = 100
+
+Los experimentos fueron registrados con MLflow, permitiendo comparar métricas y parámetros de forma sistemática.
+- Métricas evaluadas
+- Accuracy
+- Precision
+- Recall
+- F1-score
+- ROC AUC
+
+---
+
 ## 📂 Estructura del repositorio
 
 ```
 Telco_Churn_MLOps_Pipeline/
 │
-├── .dvc/                      # Configuración de DVC
-├── .github/workflows/ci.yml   # Pipeline de CI con GitHub Actions
-├── data/                      # Raw / processed / prepared (vacío, runtime)
-├── models/                    # Modelos entrenados (ignorados por Git)
+├── .github/workflows/ci.yml   # CI con GitHub Actions
+├── data/                      # raw / processed / prepared (DVC)
 ├── params/                    # Configuración de modelos (YAML)
 ├── src/                       # Scripts del pipeline
+├── metrics/                   # Métricas de evaluación
+├── models/                    # Modelos entrenados (DVC)
 ├── dvc.yaml                   # Definición del pipeline
 ├── dvc.lock                   # Lockfile reproducible
 ├── requirements.txt
-└── README.md
+├── README.md
+└── README_EN.md
 ```
 
 ---
 
-📂 **Carpeta de datos**  
-Por razones de licencia y tamaño, los datasets utilizados no se incluyen en el repositorio público.  
-La carpeta `data/` se genera automáticamente durante la ejecución del pipeline y se versiona mediante **DVC**.
-
----
-
-## 🧰 Requisitos técnicos
-
-- Python 3.11  
-- Dependencias listadas en `requirements.txt`  
-- DVC configurado con un remote (por ejemplo, DagsHub)
-
----
-
-## 🚀 Ejecución
-
-```bash
+🚀 Ejecución
 pip install -r requirements.txt
 dvc repro
-```
 
 ---
 
-## 📊 Métricas evaluadas
+📝 Aprendizajes clave
 
-- Accuracy  
-- Precision  
-- Recall  
-- F1-score  
-- ROC AUC  
-
-Las métricas y artefactos se registran automáticamente en **MLflow**, permitiendo la comparación histórica de experimentos.
+- Diseño de pipelines de ML reproducibles con DVC
+- Separación clara entre código, configuración y artefactos
+- Comparación de modelos y experimentos con MLflow
+- Integración de CI para validar workflows completos
+- Enfoque MLOps orientado a escenarios productivos reales
 
 ---
 
-## 📝 Aprendizajes clave
-
-- Diseño de pipelines de ML reproducibles con DVC.  
-- Separación clara entre código, configuración y artefactos.  
-- Integración de CI para validar workflows completos.  
-- Tracking de experimentos con MLflow en entorno remoto.  
-- Flujo de trabajo MLOps orientado a escenarios productivos.
-
----
-
-📄 Licencia  
+📄 Licencia
 Este proyecto está bajo la licencia MIT.
 
 ---
 
-✍️ Autor: Elías Fernández  
-📧 Contacto: fernandezelias86@gmail.com  
-🔗 LinkedIn: www.linkedin.com/in/eliasfernandez208
+✍️ **Autor:** Elías Fernández  
+📧 **Contacto:** fernandezelias86@gmail.com  
+🔗 **LinkedIn:** https://www.linkedin.com/in/eliasfernandez208
