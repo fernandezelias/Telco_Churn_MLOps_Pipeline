@@ -47,7 +47,7 @@ dvc repro
 
 ---
 
-📊 Modelos y Experimentos
+## 📊 Modelos y Experimentos
 
 Se entrenaron y compararon dos modelos supervisados:
 - Logistic Regression
@@ -59,7 +59,8 @@ Para el modelo Logistic Regression se evaluaron los siguientes valores del hiper
 - C = 100
 
 Los experimentos fueron registrados con MLflow, permitiendo comparar métricas y parámetros de forma sistemática.
-- Métricas evaluadas
+
+**Métricas evaluadas**
 - Accuracy
 - Precision
 - Recall
@@ -88,13 +89,14 @@ Telco_Churn_MLOps_Pipeline/
 
 ---
 
-🚀 Ejecución
+## 🚀 Ejecución del pipeline
+
 pip install -r requirements.txt
 dvc repro
 
 ---
 
-📝 Aprendizajes clave
+## 📝 Aprendizajes clave
 
 - Diseño de pipelines de ML reproducibles con DVC
 - Separación clara entre código, configuración y artefactos
@@ -104,7 +106,7 @@ dvc repro
 
 ---
 
-📄 Licencia
+## 📄 Licencia
 Este proyecto está bajo la licencia MIT.
 
 ---
