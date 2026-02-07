@@ -113,4 +113,4 @@ Este proyecto está bajo la licencia MIT.
 
 ✍️ **Autor:** Elías Fernández  
 📧 **Contacto:** fernandezelias86@gmail.com  
-🔗 **LinkedIn:** https://www.linkedin.com/in/eliasfernandez208
+🔗 LinkedIn: [Perfil](https://www.linkedin.com/in/eliasfernandez208)
