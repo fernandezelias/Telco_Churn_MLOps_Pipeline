@@ -1,6 +1,6 @@
 # 🔁 Telco_Churn_MLOps_Pipeline
 
-🌐 Available in [Spanish](README.md)
+🌐 Disponible en [Español](README.md)
 
 ![Python](https://img.shields.io/badge/Python-3.11-blue.svg)
 ![DVC](https://img.shields.io/badge/MLOps-DVC-purple.svg)
