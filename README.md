@@ -111,4 +111,8 @@ Este proyecto está bajo la licencia MIT.
 
 ✍️ **Autor:** Elías Fernández  
 📧 **Contacto:** fernandezelias86@gmail.com  
-🔗 **LinkedIn:** https://www.linkedin.com/in/eliasfernandez208
+🔗 LinkedIn: [Profile](https://www.linkedin.com/in/eliasfernandez208)
+
+---
+
+📁 **Repositorio:** Telco_Churn_MLOps_Pipeline
