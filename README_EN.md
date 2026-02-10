@@ -113,7 +113,7 @@ This project is licensed under the MIT License.
 
 ✍️ Author: Elías Fernández
 📧 Contact: fernandezelias86@gmail.com
-🔗 LinkedIn: www.linkedin.com/in/eliasfernandez208
+🔗 LinkedIn: [Profile](https://www.linkedin.com/in/eliasfernandez208)
 
 ---
 
