@@ -111,8 +111,13 @@ This project is licensed under the MIT License.
 
 ---
 
-✍️ Author: Elías Fernández
-📧 Contact: fernandezelias86@gmail.com
+📄 Licencia
+Este proyecto está bajo la licencia MIT.
+
+---
+
+✍️ **Autor:** Elías Fernández  
+📧 **Contacto:** fernandezelias86@gmail.com  
 🔗 LinkedIn: [Profile](https://www.linkedin.com/in/eliasfernandez208)
 
 ---
