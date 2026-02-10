@@ -116,8 +116,9 @@ Este proyecto está bajo la licencia MIT.
 
 ---
 
-✍️ **Autor:** Elías Fernández  
-📧 **Contacto:** fernandezelias86@gmail.com  
+## ✍️ Author
+**Elías Fernández**  
+📧 Contacto: fernandezelias86@gmail.com  
 🔗 LinkedIn: [Profile](https://www.linkedin.com/in/eliasfernandez208)
 
 ---
