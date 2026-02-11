@@ -104,16 +104,17 @@ dvc repro
 
 ---
 
-📄 Licencia
-Este proyecto está bajo la licencia MIT.
+## 🪪 Licencia
+Este proyecto se distribuye bajo la licencia MIT.  
+Ver archivo [LICENSE](LICENSE).
 
 ---
 
 ## ✍️ Autor
-**Elías Fernández**  
-📧 Contacto: fernandezelias86@gmail.com  
-🔗 LinkedIn: [Perfil](https://www.linkedin.com/in/eliasfernandez208)
+**Elías Fernández**
 
 ---
 
-📁 **Repositorio:** Telco_Churn_MLOps_Pipeline
+## 📫 Contacto
+📧 [fernandezelias86@gmail.com](mailto:fernandezelias86@gmail.com)  
+🔗 LinkedIn: [Perfil](https://www.linkedin.com/in/eliasfernandez208)
